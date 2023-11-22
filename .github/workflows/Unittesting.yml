@@ -1,0 +1,21 @@
+name: Unit testing with pytest
+
+on: [push] # when should we run this action
+
+jobs: # what should we do when it is run
+  build:
+    runs-on: ubuntu-latest # platform it runs on
+    steps:
+    - uses: actions/checkout@v4 # checkout your code
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' # specify python version
+    - name: Install dependencies # which libraries do we need for testing
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt # they should be listed in this file
+    - name: Test with pytest
+      run: |
+        pip install pytest
+        pytest tests.py
