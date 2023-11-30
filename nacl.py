@@ -50,6 +50,11 @@ import numpy as np
 #from mpl_toolkits.mplot3d import Axes3D
 #import scipy.optimize
 
+try:
+    import numpy as np
+except ImportError:
+    np = None
+
 # Constants
 KE2 = 197 / 137  # eV-nm   Coulomb force charge
 ALPHA = 1.09e3  # eV      parameter of model
