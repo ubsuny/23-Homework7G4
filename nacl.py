@@ -44,6 +44,8 @@ ionic cluster system, particularly focusing on the optimization of ion positions
 a stable configuration with minimal potential energy.
 """
 # Have adjusted Uij to uij to follow sbakecase sugeested by pylint
+
+# pylint: disable=E0401
 import itertools
 import numpy as np
 #import matplotlib.pyplot as plt
