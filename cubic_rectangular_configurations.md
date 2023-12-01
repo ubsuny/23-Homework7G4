@@ -77,7 +77,7 @@ initial U  : -16.037660834699643 eV
 
 Binding Energy: -8.0188 eV
  ```
- ![Alt text](images/initial_cubic_output-1.png)
+ ![Alt text](images/initial_cubic_output.png)
 
   ## Optimization:
 
