@@ -72,7 +72,7 @@ r_cl = np.array( [ [ a, 0, 0 ], [ 0, a, 0 ], [ 0, 0, a ], [ a, a, a ] ] )
  ```python
 initial U  : -16.037660834699643 eV
 
-Binding Energy: -8.0188 eV
+Binding Energy: -4.01 eV/ion pair
  ```
  ![Alt text](images/initial_cubic_output.png)
 
@@ -98,7 +98,7 @@ Final optimized cluster positions
  [ 0.23000068  0.22996054  0.22999278]]
 Final potential: -28.23583056411562
 
-Binding Energy: -14.1179 eV
+Binding Energy: -7.05 eV
 ```
 ![Alt text](images/optimized_cubic_output.png)
 
@@ -114,7 +114,7 @@ r_cl = np.array( [ [ 0, 0, a ], [ a, 0, 0 ], [ 0, 2*a, 0 ], [ a, 2*a, a ] ] )
  ```python
 initial U  : -20.397511221729758 eV
 
-Binding Energy: -10.1988 eV
+Binding Energy: -5.1 eV
  ```
 ![Alt text](images/initial_rectangular_output.png)
 
@@ -132,7 +132,7 @@ Final optimized cluster positions
  [ 0.21355438  0.33551102  0.23934796]]
 Final potential: -28.235830564338745
 
-Binding Energy: -14.1179 eV
+Binding Energy: -7.05 eV/ion pair
 ```
 ![Alt text](images/optimized_rectangular_output1.png)
 
