@@ -32,10 +32,7 @@ A tetramer of NaCl is a cluster of four sodium ions (Na+) and four chloride ions
 ##  THE ION–ION POTENTIAL:
 The two-body (Na and Cl) potential consists of the sum of the attractive or repulsive point charge Coulomb energy and the repulsive Pauli energy.
 
-
-$$
-U\left(r_{i j}\right)=\left\{\begin{array}{l}{-\frac{e^{2}}{4 \pi \epsilon_{0} r_{i j}}+\alpha e^{-r_{i j} / \rho}+b\left(\frac{c}{r_{i j}}\right)^{12}} (\mathrm{+ -})\\ {+\frac{e^{2}}{4 \pi \epsilon_{0} r_{i j}}+b\left(\frac{c}{r_{i j}}\right)^{12}} (\mathrm{++ or --}) \end{array}\right.
-$$
+![Alt text](images/potential.png)
 
 where the Coulomb force has constant:
 
@@ -77,7 +74,7 @@ initial U  : -16.037660834699643 eV
 
 Binding Energy: -8.0188 eV
  ```
- ![Alt text](images/initial_cubic_output-1.png)
+ ![Alt text](images/initial_cubic_output.png)
 
   ## Optimization:
 
