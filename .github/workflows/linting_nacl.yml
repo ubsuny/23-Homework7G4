@@ -1,0 +1,32 @@
+name: Lint the main NaCl module named nacl.py
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11  # Python version
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        # Or install your required packages here if not using a requirements.txt file
+        
+    - name: Install linter
+      run: pip install pylint
+
+    - name: List directory contents
+      run: ls -al
+
+    - name: Lint Python code
+      run: pylint nacl.py
